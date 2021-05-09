@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #747fea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+    color: #f4f4f4;
+  }
+  main {
+    padding: 1rem;
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+  }
+  h1 {
+    font-weight: normal;
+    font-size: 3rem;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    font-family: monospace;
+  }
+  
+  .countdown-container {
+      place-content: space-around;
+  }
+  .show{
+    display: flex;
+  }
+  .hide{
+    display: none;
+  }
+  .countdown-container div {
+    min-width: 25%;
+  }
+  .big-text {
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 1;
+    margin: 0 2rem;
+    font-family: fantasy;
+  }
+  
+  .countdown-value {
+    text-align: center;
+  }
+  .countdown-value span {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    font-family: monospace;
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    .countdown-container div {
+      width: 25%;
+    }
+    .big-text {
+      font-size: 2rem;
+      font-weight: normal;
+    }
+    .countdown-value span {
+      margin: 1rem;
+      font-size: small;
+      margin-inline-end: auto;
+    }
+  }
+ 
+  #datePicker{
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  #mubeya {
+    position: absolute;
+    bottom: 10px;
+    padding: 1rem;
+    text-decoration: none;
+    color: currentColor;
+    font-size: small;
+  }
+  
